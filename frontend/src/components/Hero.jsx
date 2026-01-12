@@ -19,8 +19,8 @@ const Hero = () => {
       </div>
       <div className="absolute lg:relative inset-0 lg:inset-auto w-full lg:w-[60%] h-full lg:h-[700px] opacity-30 lg:opacity-100 z-0 lg:z-10 overflow-hidden">
         <Spline
-          scene="https://prod.spline.design/Jbf2AEWOVGJxTEBu/scene.splinecode"
           className="absolute lg:relative lg:top-0 top-[-20%] bottom-0 left-0 lg:left-0 scale-125 lg:scale-150"
+          scene="https://prod.spline.design/T2GGTPWDgpfXJEJF/scene.splinecode"
         />
       </div>
     </main>
