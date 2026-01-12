@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+body{
+  @apply bg-gradient-to-r from-purple-950 to-gray-950 text-white relative font-sans h-screen overflow-x-hidden font-space
+}
+}
