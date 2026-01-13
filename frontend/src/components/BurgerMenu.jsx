@@ -1,6 +1,8 @@
 export const BurgerMenu = ({ modalOpen, onClick }) => {
   return (
-    <div className="sm:hidden flex-col space-y-1 relative z-50" onClick={onClick}>
+    <div  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000" className="sm:hidden flex-col space-y-1 relative z-50" onClick={onClick}>
       <div
         className={`h-1 w-7 bg-white transition-all ease-in-out ${
           modalOpen && "absolute top-1  -rotate-45"

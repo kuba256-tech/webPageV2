@@ -3,7 +3,10 @@ import Spline from "@splinetool/react-spline";
 const Hero = () => {
   return (
     <main className="flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh-10rem)] relative overflow-hidden">
-      <div className="max-w-xl ml-[5%] z-51 mt-[50%] md:mt-[40%] lg:mt-0 space-y-6 relative">
+      <div
+        data-aos="fade-right"
+        className="max-w-xl ml-[5%] z-51 mt-[80%] md:mt-[40%] lg:mt-0 space-y-6 relative"
+      >
         <h1 className="z-50 uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider leading-tight">
           <span className="inline-block animate-fade-in">Kuba</span>
           <br />
@@ -17,9 +20,11 @@ const Hero = () => {
           excited to learn and grow.
         </p>
       </div>
-      <div className="absolute lg:relative inset-0 lg:inset-auto w-full lg:w-[60%] h-full lg:h-[700px] opacity-30 lg:opacity-100 z-0 lg:z-10 overflow-hidden">
+      <div
+        className="absolute lg:relative inset-0 lg:inset-auto w-full lg:w-[60%] h-full lg:h-[700px] opacity-30 lg:opacity-100 z-0 lg:z-10 overflow-hidden"
+      >
         <Spline
-          className="absolute lg:relative lg:top-0 top-[-20%] bottom-0 left-0 lg:left-0 scale-125 lg:scale-150"
+          className="absolute lg:relative lg:top-0 top-[-20%] bottom-0 left-0 lg:left-0 scale-125 lg:scale-150 h-full"
           scene="https://prod.spline.design/T2GGTPWDgpfXJEJF/scene.splinecode"
         />
       </div>

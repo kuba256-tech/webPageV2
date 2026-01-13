@@ -1,0 +1,1 @@
+export const navigations = ["skills", "projects", "experience"]
