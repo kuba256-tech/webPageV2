@@ -1,23 +1,24 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+import Header from "./components/HeaderComponents/Header";
+import Hero from "./components/HeroComponents/Hero";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Skills from "./components/SkillsComponents/Skills.jsx";
+
 
 function App() {
-
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
-      duration:1500,
-      once:true
-    })
-  })
+      duration: 1500,
+      once: true,
+    });
+  });
   return (
-    <main>
-        <Header />
-        <Hero/>
-     
-    </main>
+    <>
+      <Header />
+      <Hero />
+      <Skills />
+    </>
   );
 }
 
