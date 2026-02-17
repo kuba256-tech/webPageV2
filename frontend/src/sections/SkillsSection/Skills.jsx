@@ -5,14 +5,14 @@ import {
   getLevelColor,
   getProficiencyLevelFunc,
   ToolsSkills,
-} from "./skillsList";
-import Skill from "./Skill";
+} from "../../components/SkillsComponents/skillsList";
+import Skill from "../../components/SkillsComponents/Skill";
 
 const Skills = () => {
   return (
-    <section id="skills" className="p-4">
+    <section id="skills" className="p-4 mb-[10%]">
       <div data-aos="fade-up">
-        <div className="text-center ">
+        <div className="text-center">
           <h3 className="z-50 uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider leading-tight">
             Tech Stack & Expertise
           </h3>

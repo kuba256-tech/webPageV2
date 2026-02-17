@@ -2,12 +2,12 @@ import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
   return (
-    <main className="flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh-10rem)] relative overflow-hidden">
+    <main className="flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh-10rem)] relative overflow-hidden mb-36">
       <div
         data-aos="fade-right"
         className="max-w-xl ml-[5%] z-51 mt-[80%] md:mt-[40%] lg:mt-0 space-y-6 relative"
       >
-        <h1 className="z-50 uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider leading-tight">
+        <h1 className="z-50 uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider leading-tight mt-40">
           <span className="inline-block animate-fade-in">Kuba</span>
           <br />
           <span className="capitalize bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent border-b-4 border-fuchsia-600 pb-2 inline-block">
