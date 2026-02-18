@@ -1,1 +1,1 @@
-export const navigations = ["skills", "projects", "experience"]
+export const navigations = ["skills", "projects", "experience", "education"]

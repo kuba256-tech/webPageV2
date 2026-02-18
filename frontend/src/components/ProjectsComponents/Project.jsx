@@ -32,6 +32,8 @@ const Project = ({ project, index }) => {
           src={project.image}
           alt={project.title}
           className="h-80 w-full object-cover object-top rounded-b-md"
+          loading="lazy"
+          decoding="async"
         />
         <div className="p-5">
           <h5 className="text-2xl">{project.title}</h5>
@@ -55,16 +57,18 @@ const Project = ({ project, index }) => {
               transition={{ duration: 1 }}
               className={`p-5 absolute left-0 top-0 bg-white opacity-80 w-full h-full block ${!openModal && "hidden"} text-purple-900`}
             >
-              <h3 className="text-4xl text-center font-bold uppercase underline mb-4">Stack Used</h3>
+              <h3 className="text-4xl text-center font-bold uppercase underline mb-4">
+                Stack Used
+              </h3>
               {ProjectTools.map((tool) => (
                 <div key={tool.id} className="flex  items-center gap-5">
-                  <tool.image size={"10%"}/>
+                  <tool.image size={"10%"} />
                   <p className="text-2xl">{tool.title}</p>
                 </div>
               ))}
-               <div className="overflow-scroll h-96">
-                <span >{project.description}</span>
-               </div>
+              <div className="overflow-scroll h-96">
+                <span>{project.description}</span>
+              </div>
             </motion.div>
           ) : null}
         </AnimatePresence>
