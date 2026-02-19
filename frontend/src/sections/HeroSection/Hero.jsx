@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section id="heroSection">
-      <main className="flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh-10rem)] relative overflow-hidden mb-36">
+      <main className="flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh-10rem)] relative overflow-hidden ">
         <motion.div
           initial={{ left: -100, opacity: 0 }}
           animate={{ left: 0, opacity: 1 }}

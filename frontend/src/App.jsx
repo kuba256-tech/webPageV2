@@ -6,6 +6,7 @@ import Experience from "./sections/ExperienceSection/Experience.jsx";
 import Education from "./sections/EducationSection/Education.jsx";
 import scrollReveal from "scrollreveal";
 import { useEffect } from "react";
+import Contact from "./sections/Contact/Contact.jsx";
 
 function App() {
   useEffect(() => {
@@ -20,11 +21,12 @@ function App() {
     });
     [
       "#header",
-      "#heroSection",
-      "#skillsSection",
-      "#projectsSection",
-      "#experienceSection",
-      "#educationSection",
+      "#hero",
+      "#skills",
+      "#projects",
+      "#experience",
+      "#education",
+      "#contact"
     ].forEach((selector) => {
       sr.reveal(selector);
     });
@@ -38,6 +40,7 @@ function App() {
       <Projects />
       <Experience />
       <Education />
+      <Contact/>
     </>
   );
 }

@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
-    @apply bg-gradient-to-r  from-gray-950  to-purple-950 text-white relative font-sans min-h-screen overflow-x-hidden font-space;
+    @apply bg-gradient-to-r  from-gray-950  to-purple-950 text-white relative font-sans min-h-screen overflow-x-hidden font-space pb-20;
   }
 }

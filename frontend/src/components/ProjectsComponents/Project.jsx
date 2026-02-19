@@ -26,7 +26,7 @@ const Project = ({ project, index }) => {
           ease: "easeOut",
         }}
         key={project.id}
-        className="pb-10  border-pink-100 border-4 rounded-3xl  bg-slate-800 overflow-hidden relative"
+        className=" pb-10 border-pink-100 border-4 rounded-3xl  bg-slate-800 overflow-hidden relative"
       >
         <img
           src={project.image}
@@ -37,7 +37,7 @@ const Project = ({ project, index }) => {
         />
         <div className="p-5">
           <h5 className="text-2xl">{project.title}</h5>
-          <p className="text-small line-clamp-5">{project.description}</p>
+          <p className="text-small hidden sm:line-clamp-5">{project.description}</p>
         </div>
         <div className="px-5 flex gap-3">
           <CgDetailsMore

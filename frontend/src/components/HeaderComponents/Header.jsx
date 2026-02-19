@@ -41,12 +41,12 @@ const Header = () => {
                 initial={{ opacity: 0, top: -100 }}
                 animate={{ opacity: 1, top: 1 }}
                 transition={{ delay: (index + 1) * 0.2 , ease:"easeInOut"}}
-
                 key={item}
                 className="group relative overflow-hidden"
+                onClick={()=>setModalOpen(false)}
               >
                 <a
-                  href={`#`}
+                  href={`#${item}`}
                   className="relative z-10 block px-6 py-2 text-3xl uppercase tracking-wider transition-all duration-300 bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent group-hover:text-black ease-in-out"
                 >
                   {item}
@@ -75,7 +75,7 @@ const Header = () => {
                 className="group relative"
               >
                 <a
-                  href={`#`}
+                  href={`#${item}`}
                   className=" block uppercase text-base tracking-wider transition-all group-hover:text-gray-300 z-50 group-hover:scale-110  ease-in-out"
                 >
                   {item}
@@ -91,9 +91,9 @@ const Header = () => {
           transition={{ delay: 0.25, duration:1, ease: "easeOut" }}
           className="group relative overflow-hidden rounded-full"
         >
-          <button className="bg-gradient-to-r from-fuchsia-600 to-purple-600 relative z-10 block py-3 px-8 rounded-full uppercase tracking-wider font-medium transition-all duration-300 text-white group-hover:text-black ease-in-out hover:bg-none">
+          <a href="#contact" className="bg-gradient-to-r from-fuchsia-600 to-purple-600 relative z-10 block py-3 px-8 rounded-full uppercase tracking-wider font-medium transition-all duration-300 text-white group-hover:text-black ease-in-out hover:bg-none">
             contact
-          </button>
+          </a>
           <div className="absolute top-0 left-0 w-0 h-full bg-white rounded-full transition-all duration-500 ease-out group-hover:w-full"></div>
         </motion.div>
         <BurgerMenu onClick={() => toggleModal()} modalOpen={modalOpen} />

@@ -6,7 +6,7 @@ const Experience = () => {
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   return (
-    <section id="experienceSection" className="mx-[5%] mb-[10%]">
+    <section id="experience" className="mx-[5%] mb-[10%] pt-[25%] md:pt-[15%]">
       <div>
         <div className="text-center mb-6 space-y-2">
           <h3 className="z-50 uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider leading-tight">
